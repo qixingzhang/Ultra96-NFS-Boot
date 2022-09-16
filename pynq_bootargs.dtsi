@@ -1,0 +1,6 @@
+/ {
+	chosen {
+		bootargs = "root=/dev/nfs nfsroot=172.16.75.132:/home/xilinx/NFS/ultra96-rootfs,nfsvers=3,tcp ip=dhcp rw rootwait earlyprintk devtmpfs.mount=1 uio_pdrv_genirq.of_id=\"generic-uio\" clk_ignore_unused";
+		pynq_board = "Unknown";
+	};
+};
