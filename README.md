@@ -22,7 +22,7 @@ This is an instruction to build the PYNQ v2.7 image for Ultra96-V2 board with ro
     </p>
 
     Here the offset is **268288**.
-1. Mount the second partition with offset = above value*512
+1. Mount the second partition with **offset = 268288*512 = 137363456**
     ```shell
     mount -o loop,offset=137363456 <path_to_img>/Ultra96v2-2.7.0.img <mount_path>/
     ```
