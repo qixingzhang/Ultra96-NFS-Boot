@@ -46,6 +46,8 @@ This is an instruction to build the PYNQ v2.7 image for Ultra96-V2 board with ro
     ```
 1. Open and edit the file **sdbuild/Makefile**.
     * **Delete** line 145 and 146
+       * <del>echo 'CONFIG_SUBSYSTEM_ROOTFS_EXT4=y' >> $$(PL_CONFIG_$1)</del>
+       * <del>echo 'CONFIG_SUBSYSTEM_SDROOT_DEV="/dev/mmcblk0p2"' >> $$(PL_CONFIG_$1)</del>
     * **Incert** below three lines around line 146, replace the field "/NFS/rootfs" and "192.168.1.x" with the NFS path and the IP address of NFS server 
         ```
         echo 'CONFIG_SUBSYSTEM_ROOTFS_NFS=y' >> $$(PL_CONFIG_$1)
